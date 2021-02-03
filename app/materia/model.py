@@ -8,9 +8,3 @@ class Materia(db.Model):
 
     turmas                  = db.relationship("Turma", backref="materia")
 
-'''
-    def json():
-        return {
-            'owner': 
-        }
-'''

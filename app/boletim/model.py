@@ -11,10 +11,8 @@ class Boletim(db.Model):
 
 
 '''
-    lutador_id  = db.Column(db.Integer, db.ForeignKey('lutadores.id'))     #db.ForeignKey('$elemento-de-outra-tabela')
-
     def json():
         return {
-            'owner': 
+            'key': 
         }
 '''
