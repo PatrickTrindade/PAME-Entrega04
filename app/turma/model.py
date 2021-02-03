@@ -1,4 +1,5 @@
 from ..extensions import db
+from ..association import association_table
 
 class Turma(db.Model):
     __tablename__           = 'turma'

@@ -1,4 +1,5 @@
 from ..extensions import db
+from ..association import association_table
 
 class Aluno(db.Model):
     __tablename__           = 'aluno'
