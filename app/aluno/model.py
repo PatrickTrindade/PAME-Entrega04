@@ -11,8 +11,7 @@ class Aluno(db.Model):
     periodo_de_ingresso     = db.Column(db.String(4), nullable=False)
     curso                   = db.Column(db.String(63), nullable=False)
 
-    boletim_id              = db.Column(db.Integer, ForeignKey('boletim.id')) 
+    boletim_id              = db.Column(db.Integer, db.ForeignKey('boletim.id')) 
     boletim                 = db.relationship('Boletim', backref='aluno')
 
     turma                   = db.relationship('Turma', secondary=association_table, backref='aluno')
-

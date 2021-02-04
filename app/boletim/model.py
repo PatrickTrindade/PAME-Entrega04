@@ -6,7 +6,7 @@ class Boletim(db.Model):
     nome                    = db.Column(db.String(63), nullable=False)
     codigo                  = db.Column(db.String(63), nullable=False)
 
-    aluno_id                = db.Column(db.Integer, ForeignKey('aluno.id'))
+    aluno_id                = db.Column(db.Integer, db.ForeignKey('aluno.id'))
     aluno                   = db.relationship('Aluno', backref='boletim')
 
 
